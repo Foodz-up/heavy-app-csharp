@@ -1,0 +1,9 @@
+﻿<Application x:Class="CrudUsers.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CrudUsers"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+            <Image x:Key="MyImage" Source="/refresh.png"/>
+    </Application.Resources>
+</Application>

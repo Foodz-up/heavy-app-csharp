@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FormMySQL1.cs" />
+    <Compile Remove="FormMySQL1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="FormMySQL1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Logo.png" />
+    <None Remove="refresh.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Logo.png" />
+    <Resource Include="refresh.png" />
+  </ItemGroup>
+
+</Project>
